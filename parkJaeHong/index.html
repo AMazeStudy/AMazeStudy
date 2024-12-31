@@ -1,13 +1,120 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>박재홍 - 이력서</title>
+  <link href="./css/styles.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'SpoqaHanSansNeo';
+      src: url('./fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+    }
+
+    * {
+      font-family: 'SpoqaHanSansNeo', sans-serif;
+      font-weight: 400;
+    }
+  </style>
 </head>
 
 <body>
+  <page size="A4">
+    <div class="root" id="root">
+      <div class="left-panel">
+        <!-- 이미지 container -->
+        <div class="img-container">
+          <img src="./assets/profile.jpg" alt="profile">
+        </div>
+        <!-- 기술 스택 -->
+        <div class="left-container">
+          <h2>SKILLS</h2>
+          <div class="skill-content">
+            <ul>
+              <li>HTML, CSS, JS</li>
+              <li>React Native</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Java</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 언어 능력 -->
+        <div class="left-container">
+          <h2>LANGUAGE</h2>
+          <div class="language-content">
+            <div class="language-item">
+              <div class="language-info">
+                <span>CHINESE</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="language-item">
+              <div class="language-info">
+                <span>English</span>
+                <span>70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 최종 학력 -->
+        <div class="left-container">
+          <h2>EDUCATION</h2>
+          <div class="education-content">
+            <h4>University of Liverpool</h4>
+            <h4>China HongKong English School</h4>
+          </div>
+        </div>
+        <!-- Github, LinkedIn -->
+        <div class="left-container">
+          <h2>SOCIAL LINK</h2>
+          <div class="social-content">
+            <h4>github.com/qkrwoghd04</h4>
+            <h4>linkedin.com/in/jaehong-park-12328a303/</h4>
+          </div>
+        </div>
+      </div>
 
+      <!-- 오른쪽 패널 -->
+      <div class="right-panel">
+
+      </div>
+
+
+
+      <!-- 프로필 벨트 Absolute -->
+      <div class="profile-belt">
+        <!-- 이름, 직업 -->
+        <div class="belt-container-left">
+          <h1>JAEHONG PARK</h1>
+          <h3>Software Developer</h3>
+        </div>
+        <!-- 핸드폰 번호, 이메일, 주소 -->
+        <div class="belt-container-right">
+          <div class="belt-content">
+            <p>PHONE</p>
+            <p>010-3360-4104</p>
+          </div>
+          <div class="belt-content">
+            <p>EMAIL</p>
+            <p>qkrwoghd04@naver.com</p>
+          </div>
+          <div class="belt-content">
+            <p>ADDRESS</p>
+            <p>서울시 마포구</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </page>
 </body>
 
 </html>

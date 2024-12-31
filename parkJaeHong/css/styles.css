@@ -1,0 +1,146 @@
+/* 기본 세팅 */
+body {
+  background: rgb(204, 204, 204);
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  position: relative;
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+@page {
+  size: 21cm 29.7cm;
+  margin: 0mm;
+}
+.root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 프로필 벨트 */
+.profile-belt {
+  width: 100%;
+  height: 13%;
+  background-color: white;
+  opacity: 90%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.belt-container-left {
+  padding: 0px 100px;
+}
+
+.belt-container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.belt-content > p:first-of-type {
+  font-weight: bold;
+}
+
+/* 왼쪽  */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  background-color: #393939; 
+  color: white;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 30px;
+}
+/* 이미지 컨테이너 */
+.img-container {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 30%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* 기술 스택 컨테이너 */
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 30px;
+}
+.skill-content > ul{
+  padding: 0px 0px 0px 20px;
+  margin: 20px 0px 0px 0px;
+}
+.skill-content > ul > li{
+  padding: 0px 0px 10px 0px 
+}
+/* 언어 능력 컨테이너 */
+.language-content {
+  padding: 20px 30px 0px 0px;
+}
+
+.language-item {
+  margin-bottom: 15px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #555555;
+  border-radius: 1px;
+}
+.progress {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: width 1s ease-in-out;
+}
+/* 최종 학력 컨테이너 */
+.education-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+/* 소셜 링크 컨테이너 */
+.social-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+/* 오른쪽 패널 */
+.right-panel{ 
+  flex: 1;
+}
