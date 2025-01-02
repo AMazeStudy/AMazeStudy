@@ -1,0 +1,315 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* 배경색 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto; /* 스크롤 활성화 */
+}
+
+/* A4 크기 설정 */
+.resume {
+    width: 21cm;
+    height: 29.7cm;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 39%;
+    height: 100%;
+    background: rgba(0, 110, 255, 0.04) ;
+}
+
+.image{
+    display: flex;
+    justify-content: center; /* 가로 정렬 */
+    align-items: center;    /* 세로 정렬 */
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 220px;
+    height: 220px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.image img{
+    object-fit: cover; /* 비율 유지하며 크기 맞춤 */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15); /* 약간 더 큰 그림자 */
+}
+
+.contact{
+    margin-left: 40px;
+    width:220px;
+    height:150px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.contact p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact ul{
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.contact li{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+.skills{
+    margin-left: 40px;
+    width: 220px;
+    height: 170px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.skills p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.skills div{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 0;
+    display: flex;
+}
+
+.skills ul {
+    padding: 0;
+    margin-top: 30px;
+    width: calc(50% - 5px); /* 양쪽 균등 분할 */
+}
+
+.skills li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.awardAndCertificate{
+    margin-left: 40px;
+    width: 220px;
+    height: 130px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.awardAndCertificate p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.awardAndCertificate ul{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.awardAndCertificate li{
+    margin-bottom: 5px;
+}
+
+.education{
+    margin-left: 40px;
+    width: 220px;
+    height: 210px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.education h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.education ul{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.education li{
+    margin-bottom: 15px;
+}
+
+.education p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.portfolio{
+    margin-left: 40px;
+    width: 220px;
+    height: 100px;
+}
+
+.portfolio p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.portfolio a{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.right{
+    width: 61%;
+    height: 100%;
+}
+
+.aboutMe{
+    width: 400px;
+    height: 220px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.aboutMe p#name{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutMe p#simple{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.aboutMe p#about{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 7px;
+}
+
+.aboutMe p#introduce{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.experience{
+    width: 400px;
+    height: 290px;
+    margin-left: 40px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.experience p#middle{
+    font-size: 18px;
+    font-weight: bold;
+}
+.experience ul{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+.experience ul ::marker{
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 123, 255, 1);
+}
+
+.experience li{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.experience li p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.project{
+    width: 400px;
+    height: 500px;
+    margin-left: 40px;
+}
+
+.project #middle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.project ul{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.project ul ul{
+    margin-top: 10px;
+}
+
+.project ul ::marker{
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 123, 255, 1);
+}
+
+.project ul li#first{
+    margin-bottom: 30px;
+}
+
+.project p{
+    margin: 0;
+    padding: 0;
+}
+
+.project li p:nth-child(2){
+    color: rgba(0, 123, 255, 1);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.project #projectSkills{
+    color: rgba(0, 123, 255, 1);
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.project ul li ul li{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.project ul li p{
+    font-size: 14px;
+}
