@@ -1,0 +1,91 @@
+/* 기본 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* 전체 레이아웃 컨테이너 */
+.container {
+  display: flex; /* 두 단으로 나누는 핵심 설정 */
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 왼쪽 컬럼 스타일 */
+.left-column {
+  width: 40%; /* 왼쪽 컬럼 너비 */
+  background-color: #222; /* 배경 색상 */
+  color: #fff; /* 텍스트 색상 */
+  padding: 20px;
+}
+
+.left-column h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.left-column p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.left-column h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.left-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-column li {
+  margin-bottom: 5px;
+}
+
+/* 오른쪽 컬럼 스타일 */
+.right-column {
+  width: 60%; /* 오른쪽 컬럼 너비 */
+  padding: 20px;
+}
+
+.right-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.right-column .job, .right-column .education {
+  margin-bottom: 20px;
+}
+
+.right-column h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.right-column p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYU DONGHYEON - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #13111C;
+      color: #fff;
+      line-height: 1.6;
+      z-index: 1;
+    }
+
+    .header-section {
+      background-color: #13111C;
+      background: radial-gradient(circle at 30% 30%, #2D2B38 0%, #13111C 70%);
+      color: #fff;
+      padding: 40px;
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .header-info {
+      max-width: 600px;
+      position: relative;
+      z-index: 3;
+      margin-top: 20px;
+    }
+
+    .header-info h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .header-info h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+
+    .header-info p {
+      font-size: 0.9rem;
+      max-width: 500px;
+      color: #999;
+      margin-top: 20px;
+    }
+
+    .location {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      font-size: 0.9rem;
+      z-index: 3;
+    }
+
+    .profile-image-container {
+      position: absolute;
+      top: 60px;
+      right: 100px;
+      width: 450px;
+      height: 600px;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    } 
+
+    .container {
+      display: flex;
+      background-color: #fff;
+      color: #000;
+      position: relative;
+      z-index: 4;
+    }
+
+    .left-column {
+      width: 300px;
+      background-color: #fff;
+      padding: 40px;
+    }
+
+    .right-column {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+      z-index: auto;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .contact-info, .social-links, .skills-list, .education-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info p, .social-links p {
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .skills-list ul {
+      list-style: none;
+    }
+
+    .skills-list li {
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .experience-item {
+      margin-bottom: 30px;
+    }
+
+    .experience-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #000;
+    }
+
+    .experience-item .company {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .experience-item .period {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+
+    .experience-item p {
+      font-size: 0.85rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .education-info p {
+      font-size: 0.85rem;
+      color: #333;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-section">
+    <div class="header-info">
+      <h2>SW Developer</h2>
+      <h1>RYU<br>DONGHYEON</h1>
+      <p>I became a developer to create the services I wanted and to make things that I thought were worthwhile accessible to anyone anywhere and at any time.</p>
+    </div>
+    <div class="location">Yong-In, Korea</div>
+    <div class="profile-image-container">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-image">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left-column">
+      <div class="contact-info">
+        <h2 class="section-title">CONTACT</h2>
+        <p>Email<br>r12dh16@gmail.com</p>
+        <p>Phone<br>+82 10-3928-2897</p>
+        <p>Portfolio<br>vegastech.tistory.com</p>
+        <p>Website<br>www.tester.com</p>
+      </div>
+
+      <div class="social-links">
+        <h2 class="section-title">SOCIAL</h2>
+        <p>LinkedIn /Donghyeon Ryu</p>
+        <p>Facebook /tester</p>
+        <p>Instagram /ryudong_hyeon</p>
+      </div>
+
+      <div class="skills-list">
+        <h2 class="section-title">SKILLS</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Search</li>
+        </ul>
+      </div>
+
+      <div class="education-info">
+        <h2 class="section-title">EDUCATION</h2>
+        <p>Bachelor</p>
+        <p>/ SW-Venture,<br>Business<br>Administration</p>
+        <p>Chung-Ang<br>University</p>
+        <p>2018-2025</p>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="experience-item">
+        <h3>Your Job title</h3>
+        <p class="company">Company Name</p>
+        <p class="company">City</p>
+        <p class="period">2023-Present</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Your Job title</h3>
+        <p class="company">Company Name</p>
+        <p class="company">City</p>
+        <p class="period">2023-Present</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
