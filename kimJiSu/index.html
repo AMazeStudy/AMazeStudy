@@ -12,9 +12,11 @@
       src: url('./fonts/Montserrat-Light.ttf') format('truetype');
     }
     @font-face {
-      font-family: 'GowunBatang-Regular';
-      src: url('./fonts/GowunBatang-Regular.ttf') format('truetype');
-    }
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    } 
   </style>
 </head>
 
@@ -77,15 +79,15 @@
             <ul>
               <li>
                 <img id="portfolio-icon" src="images/velog.png" alt="velog">
-                Velog
+                <a target="_blank" href="https://velog.io/@zzzzzisu/posts">Velog</a>
               </li>
               <li>
                 <img id="portfolio-icon" src="images/notion.png" alt="notion">
-                Notion
+                <a target="_blank" href="https://www.notion.so/HTML-16ad7bbd7bef80ce97d7d70fe6ef79de">Notion</a>
               </li>
               <li>
                 <img id="portfolio-icon" src="images/github.png" alt="github">
-                Github
+                <a target="_blank" href = "https://github.com/js4939?tab=repositories">Github</a>
               </li>
             </ul>
           </div>
@@ -100,10 +102,10 @@
 
           <!-- 자기소개 -->
           <div class="about-me">
-            <h2 id="right-title">About Me</h2>
-            <p> 시작하면 멈추지 않고 끝까지 나아가는 김지수입니다. 
-              졸업을 앞두고 실무에 필요한 전문성이 부족하다고 판단하여
-              LG CNS AM Inspire Camp에 참여하였습니다.
+            <h2 id="right-title"> About Me</h2>
+            <p> 시작하면 멈추지 않고 끝까지 나아가는 김지수입니다. <br>
+              졸업을 앞두고 실무에 필요한 전문성이 부족하다고 <br>
+              판단하여 LG CNS AM Camp에 참여하였습니다. <br>
               이를 통해 AM에 필수적인 역량을 얻어
               실무에 유연하게 적응할 수 있을 것입니다. 
             </p>
@@ -116,11 +118,20 @@
             <ul>
               <li id="project-title">
                 감성분석 기반 여행지 리뷰 분석 및 추천 시스템
-                <p id="project-description"> 여행지 리뷰를 교통, 혼잡도, 분위기, 인프라로 감성분석하여 긍정, 부정, 중립의 비율로 요약하고 사용자 맞춤 여행지를 추천하는 Kotlin 기반 안드로이드 앱이다.</p>
+                <p id="project-description"> 
+                  여행지 리뷰를 교통, 혼잡도, 분위기, 인프라로 <br>
+                  감성분석하여 긍정, 부정, 중립의 비율로 요약하고 <br> 
+                  감성분석 결과에 따라 사용자 맞춤 여행지를 추천하는 <br>
+                  Kotlin 기반 안드로이드 앱
+                </p>
               </li>
               <li id="project-title">
                 학교 주변 맛집 추천 시스템
-                <p id="project-description"> 대학가 주변이라는 특성을 살려 음식점의 정보를 카테고리별로 제공하고, 자주 가는 강의동에서 가까운 식당 리스트를 제공하는 Kotlin 기반 안드로이드 앱이다. </p>
+                <p id="project-description"> 
+                  대학가 주변이라는 특성을 살려 음식점의 정보를<br> 
+                  카테고리별로 제공하고, 자주 가는 강의동에서 가까운 <br>
+                  식당 리스트를 제공하는 Kotlin 기반 안드로이드 앱 
+                </p>
               <li id="project-title">
                 HTML 반응형 이력서 배포 자동화 구현
                 <p id="project-description"> HTML로 반응형 이력서를 작성하여 Github Action을 통해 AWS S3에 저장 후, CloudFront를 이용하여 배포한다. </p>
