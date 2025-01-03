@@ -166,7 +166,7 @@ body {
     top: 70px;
     left: 55px;
     margin-bottom: 25px;
-    font-family: 'GowunBatang-Regular';
+    font-family: 'Pretendard-Regular';
     font-size: 40px;
   }
 
@@ -194,7 +194,7 @@ body {
     font-weight: bold;
     position: relative;
     top: 110px;
-    left: 55px;
+    left: 60px;
     margin-bottom: 0px;
     font-family: 'Montserrat-Light';
     font-size: 25px;
@@ -203,11 +203,12 @@ body {
   .about-me p {
     position: relative;
     top: 105px;
-    left: 58px;
+    left: 65px;
     margin-bottom: 15px;
-    margin-right: 120px;
-    font-family: 'GowunBatang-Regular';
+    margin-right: 125px;
+    font-family: 'Pretendard-Regular';
     font-size: 17px;
+    line-height: 28px;
   }
 
   /* 프로젝트 이름 디자인 */
@@ -215,9 +216,9 @@ body {
     font-weight: bold;
     position: relative;
     top: 110px;
-    left: 50px;
-    margin-right: 90px;
-    font-family: 'GowunBatang-Regular';
+    left: 30px;
+    margin-right: 80px;
+    font-family: 'Pretendard-Regular';
     font-size: 18px;
   }
 
@@ -226,6 +227,7 @@ body {
     position: relative;
     margin-bottom: 25px;
     margin-right: 20px;
-    font-family: 'GowunBatang-Regular';
+    font-family: 'Pretendard-Regular';
     font-size: 17px;
+    line-height: 28px;
   }
