@@ -1,0 +1,231 @@
+body {
+    background: rgb(204, 204, 204);
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    position: relative
+  }
+  
+  page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+  }
+  
+  /* 인쇄용 스타일 */
+  @page {
+    size: 21cm 29.7cm;
+    margin: 0mm;
+  }
+  
+  * {
+    font-family: '', sans-serif;
+    font-weight: 500;
+  }
+
+  /* 구간 나누어 디자인 */
+  .top {
+    display: flex;
+    width: 100%;
+    height: 3%;
+    background-color: rgba(247, 0, 25, 0.45);
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    height: 97%;
+  }
+
+
+  .left {
+    flex: 0 0 38%;
+    background-color: rgba(248, 20, 65, 0.12);
+
+  }
+
+  .right {
+    flex: 1;
+    background-color: whitesmoke;
+  }
+  
+/* left part */
+  /* 증명 사진 */
+  #profile-img {
+    /* 이미지 크기 조절 */
+    width: 19%;
+    height: 18%;
+    /* 이미지 절대 위치 조절 */
+    position: absolute;
+    top: 8%;
+    left: 9%;
+  }
+
+  /* left 가로 구분선 */
+  #left-hr {
+    width: 80%;
+    color: #CCCCCC;
+    /* 위 요소 기준으로 구분선 상대 위치 조절 */
+    position: relative;
+    top: 27%;
+  }
+
+  /* 각 항목의 제목 스타일 지정 */
+  #left-title {
+    font-weight: bold;
+    position: relative;
+    top: 290px;
+    left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Light';
+  }
+
+  /* Contacts 항목 디자인 */
+  .contacts ul{
+    list-style: none; /* 기본 목록 기호 제거 */
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts li {
+    position: relative;
+    top: 290px;
+    left: 40px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat-Light';
+    display: flex; /* 아이콘과 텍스트를 나란히 배치 */
+    align-items: center;
+  }
+
+  /* 아이콘 이미지 */
+  .contacts img{
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  /* Skills 항목 디자인 */
+  .skills li {
+    position: relative;
+    top: 290px;
+    left: 20px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat-Light';
+  }
+
+  /* Education 항목 디자인 */
+  .education ul{
+    list-style: none; /* 기본 목록 기호 제거 */
+    padding: 0;
+    margin: 0;
+  }
+
+  .education li {
+    position: relative;
+    top: 290px;
+    left: 40px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat-Light';
+  }
+
+  /* Portfolio 항목 디자인 */
+  .portfolio ul{
+    list-style: none; /* 기본 목록 기호 제거 */
+    padding: 0;
+    margin: 0;
+  }
+
+  .portfolio li {
+    position: relative;
+    top: 290px;
+    left: 35px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Light';
+    display: flex; /* 아이콘과 텍스트를 나란히 배치 */
+    align-items: center;
+  }
+
+  /* 아이콘 이미지 */
+  .portfolio img{
+    width: 20px;
+    margin-right: 10px;
+  }
+
+/* right part */
+  /* 이름 부분 디자인 */  
+  #name {
+    font-weight: bold;
+    position: relative;
+    top: 70px;
+    left: 55px;
+    margin-bottom: 25px;
+    font-family: 'GowunBatang-Regular';
+    font-size: 40px;
+  }
+
+  #sw {
+    position: relative;
+    top: 50px;
+    left: 58px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat-Light';
+    font-size: 25px;
+  }
+
+  /* right 가로 구분선 */
+  #right-hr {
+    width: 80%;
+    color: #CCCCCC;
+    /* 위 요소 기준으로 구분선 상대 위치 조절 */
+    position: relative;
+    top: 10%;
+  }
+
+  /* 각 항목의 제목 스타일 지정 */
+  #right-title {
+    font-weight: bold;
+    position: relative;
+    top: 110px;
+    left: 55px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat-Light';
+    font-size: 25px;
+  }
+
+  .about-me p {
+    position: relative;
+    top: 105px;
+    left: 58px;
+    margin-bottom: 15px;
+    margin-right: 120px;
+    font-family: 'GowunBatang-Regular';
+    font-size: 17px;
+  }
+
+  /* 프로젝트 이름 디자인 */
+  #project-title {
+    font-weight: bold;
+    position: relative;
+    top: 110px;
+    left: 50px;
+    margin-right: 90px;
+    font-family: 'GowunBatang-Regular';
+    font-size: 18px;
+  }
+
+  /* 프로젝트 설명 디자인 */
+  #project-description{
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    font-family: 'GowunBatang-Regular';
+    font-size: 17px;
+  }

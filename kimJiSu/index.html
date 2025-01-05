@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="./css/styles.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Montserrat-Light';
+      src: url('./fonts/Montserrat-Light.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'GowunBatang-Regular';
+      src: url('./fonts/GowunBatang-Regular.ttf') format('truetype');
+    }
+  </style>
+</head>
+
+<body>
+  <page size="A4">
+    <div class="top"></div>
+    <div class="main">
+      <!-- left part : 프로필, 연락처, 기술 스택, 학력, 포트폴리오-->
+        <div class="left">
+          <!-- 프로필 사진 -->
+          <img id="profile-img" src="images/profile.png" alt="증명사진"> 
+          
+          <!-- 연락처 -->
+          <div class="contacts">
+              <h2 id="left-title">Contacts</h2>
+              <ul>
+                <li>
+                  <img id="contacts-icon" src="images/call.png" alt="phone">
+                  010-4939-9287
+                </li>
+                <li>
+                  <img id="contacts-icon" src="images/mail.png" alt="email">
+                  kimjisu4939@gmail.com
+                </li>
+                <li>
+                  <img id="contacts-icon" src="images/location.png" alt="location">
+                  Suwon
+                </li>
+              </ul>
+          </div>
+          <hr id="left-hr">
+
+          <!-- 기술 스택 -->
+          <div class="skills">
+            <h2 id="left-title">Skills</h2>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>Node.js</li>
+              <li>C / C++</li>
+              <li>Kotlin</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <hr id="left-hr">
+
+          <!-- 학력 -->
+          <div class="education">
+            <h2 id="left-title">Education</h2>
+            <ul>
+              <li>Konkuk University</li>
+              <li>Computer Engineering</li>
+              <li>GPA 4.1 / 4.5</li>
+            </ul>
+          </div>
+          <hr id="left-hr">
+
+          <!-- 블로그, 깃허브 링크 등등 -->
+          <div class="portfolio">
+            <h2 id="left-title">Portfolio</h2>
+            <ul>
+              <li>
+                <img id="portfolio-icon" src="images/velog.png" alt="velog">
+                Velog
+              </li>
+              <li>
+                <img id="portfolio-icon" src="images/notion.png" alt="notion">
+                Notion
+              </li>
+              <li>
+                <img id="portfolio-icon" src="images/github.png" alt="github">
+                Github
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <!-- right part : 이름, 자기소개, 프로젝트 -->
+        <div class="right">
+          <!-- 이름 및 전공 -->
+          <h1 id="name">김지수</h1>
+          <h2 id="sw">SW Engineer</h2>
+          <hr id="right-hr">
+
+          <!-- 자기소개 -->
+          <div class="about-me">
+            <h2 id="right-title">About Me</h2>
+            <p> 시작하면 멈추지 않고 끝까지 나아가는 김지수입니다. 
+              졸업을 앞두고 실무에 필요한 전문성이 부족하다고 판단하여
+              LG CNS AM Inspire Camp에 참여하였습니다.
+              이를 통해 AM에 필수적인 역량을 얻어
+              실무에 유연하게 적응할 수 있을 것입니다. 
+            </p>
+          </div>
+          <hr id="right-hr">
+
+          <!-- 프로젝트 및 간단한 설명 -->
+          <div class="project">
+            <h2 id="right-title">Projects</h2>
+            <ul>
+              <li id="project-title">
+                감성분석 기반 여행지 리뷰 분석 및 추천 시스템
+                <p id="project-description"> 여행지 리뷰를 교통, 혼잡도, 분위기, 인프라로 감성분석하여 긍정, 부정, 중립의 비율로 요약하고 사용자 맞춤 여행지를 추천하는 Kotlin 기반 안드로이드 앱이다.</p>
+              </li>
+              <li id="project-title">
+                학교 주변 맛집 추천 시스템
+                <p id="project-description"> 대학가 주변이라는 특성을 살려 음식점의 정보를 카테고리별로 제공하고, 자주 가는 강의동에서 가까운 식당 리스트를 제공하는 Kotlin 기반 안드로이드 앱이다. </p>
+              <li id="project-title">
+                HTML 반응형 이력서 배포 자동화 구현
+                <p id="project-description"> HTML로 반응형 이력서를 작성하여 Github Action을 통해 AWS S3에 저장 후, CloudFront를 이용하여 배포한다. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+  </page>
+</body>
+</html>
