@@ -53,7 +53,7 @@ body {
 .contact{
     margin-left: 40px;
     width:220px;
-    height:150px;
+    height:170px;
     border-bottom: 1px solid rgb(216, 216, 216);
 }
 
@@ -67,6 +67,7 @@ body {
     text-align: left;
     margin: 0;
     padding: 0;
+    margin-top: 30px;
 }
 
 .contact li{
@@ -99,7 +100,7 @@ body {
 
 .skills ul {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 40px;
     width: calc(50% - 5px); /* 양쪽 균등 분할 */
 }
 
@@ -125,7 +126,7 @@ body {
     margin: 0;
     padding: 0;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .awardAndCertificate li{
@@ -136,7 +137,6 @@ body {
     margin-left: 40px;
     width: 220px;
     height: 210px;
-    border-bottom: 1px solid rgb(216, 216, 216);
 }
 .education h3{
     font-size: 18px;
@@ -160,23 +160,6 @@ body {
     margin-bottom: 2px;
 }
 
-.portfolio{
-    margin-left: 40px;
-    width: 220px;
-    height: 100px;
-}
-
-.portfolio p{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.portfolio a{
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-}
-
 .right{
     width: 61%;
     height: 100%;
@@ -184,8 +167,8 @@ body {
 
 .aboutMe{
     width: 400px;
-    height: 220px;
-    margin-top: 40px;
+    height: 198.5px;
+    margin-top: 60px;
     margin-left: 40px;
     border-bottom: 1px solid rgb(216, 216, 216);
 }
@@ -216,7 +199,7 @@ body {
 .aboutMe p#introduce{
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
 }
 
@@ -293,7 +276,6 @@ body {
 }
 
 .project li p:nth-child(2){
-    color: rgba(0, 123, 255, 1);
     font-size: 14px;
     margin-top: 10px;
 }
@@ -308,6 +290,14 @@ body {
 .project ul li ul li{
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+.project #projectName{
+    font-weight: bold;
+}
+
+.project ul li ul ::marker{
+    color: black;
 }
 
 .project ul li p{
